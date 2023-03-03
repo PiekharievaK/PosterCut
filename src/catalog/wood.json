@@ -1,0 +1,16 @@
+[
+    { "name": "Кролик", "price": "1000", "height": 650, "width": 550, "pieces": 1 },
+    { "name": "Медведь", "price": "2000", "height": 600, "width": 1000, "pieces": 1 },
+    { "name": "Колибри", "price": "1000", "height": 620, "width": 480, "pieces": 1 },
+    { "name": "Волк", "price": "1000", "height": 660, "width": 480, "pieces": 1 },
+    { "name": "Лев", "price": "1000", "height": 640, "width": 480, "pieces": 1 },
+    { "name": "Тигр", "price": "1000", "height": 630, "width": 482, "pieces": 1 },
+    { "name": "Каскад", "price": "2000", "height": "-", "width": "-", "pieces": 1 },
+    { "name": "Прикосновения", "price": "6000", "height": 50, "width": 50, "pieces": 3 },
+    { "name": "Совушка", "price": "1000", "height": 630, "width": 510, "pieces": 1 },
+    { "name": "Сова", "price": "1000", "height": 600, "width": 480, "pieces": 1 },
+    { "name": "Олень", "price": "1000", "height": 620, "width": 480, "pieces": 1 },
+    { "name": "Олень лес", "price": "1200", "height": 640, "width": 480, "pieces": 1 },
+    { "name": "Кубик рубика", "price": "1200", "height": 670, "width": 485, "pieces": 1 },
+    { "name": "Кошка", "price": "1000", "height": 650, "width": 450, "pieces": 1 }
+  ]
