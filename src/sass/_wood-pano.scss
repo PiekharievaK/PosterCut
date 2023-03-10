@@ -1,0 +1,90 @@
+.wood-cards {
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.wood-card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wood-card {
+width: fit-content;
+}
+.wood-card_image {
+  width: 100%;
+  height: auto;
+}
+
+.wood-card_image-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
+}
+.control {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 80px);
+  top: 50%;
+  left: 0px;
+  transform: translate(-40px, -50%);
+}
+.prev,
+.next {
+  display: block;
+  width: fit-content;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+  &:hover{
+    background-color: rgba(0, 0, 0,);
+  }
+}
+
+.wood-catalog {
+  position: relative;
+}
+
+.wood-card_title{
+    font-weight: 600;
+}
+
+.wood-card_description{
+    display: block;
+    text-align: center;
+    margin: 0px auto ;
+}
+.tns-nav{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tns-nav button{
+height: 5px;
+width: 8px;
+background-color: #a5a5a5;
+border: none;
+border-radius: 5px;
+&:not(:last-child){
+    margin-right: 5px;
+}
+
+}
+
+
+.tns-nav .tns-nav-active{
+    background-color: black;
+}

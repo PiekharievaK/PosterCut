@@ -1,0 +1,26 @@
+
+.positions {
+    display: flex;
+    justify-content: space-around;
+}
+.positions_item {
+width: 150px;
+height: 150px;
+}
+.positions_link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    // text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    font-size: 14px
+}
+.positions_title{
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+}
+.positions_image{
+width: 100px;
+}

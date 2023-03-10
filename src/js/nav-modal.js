@@ -1,10 +1,13 @@
 const nav = document.getElementById('header-nav');
 const button = document.getElementById('header-button');
+const burger = document.getElementsByClassName("header_burger")[0]
 console.log(nav);
 
 const classToggle = () => {
   nav.classList.toggle('modal-open');
   document.body.classList.toggle('modal-open');
+  burger.classList.toggle('active')
+
 };
 
 const headerToggle = () => {
@@ -15,18 +18,14 @@ const headerToggle = () => {
     navLinks.forEach(item => item.addEventListener('click', classToggle));
   } else {
     navLinks.forEach(item => item.removeEventListener('click', classToggle));
-  }
-
-  if (button.innerHTML === 'Х') {
-    button.innerHTML = 'Open';
-  } else {
-    button.innerHTML = 'Х';
-  }
+  } 
+  
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     nav.classList.remove('modal-open');
     document.body.classList.remove('modal-open');
-    button.innerHTML = 'Open';
+    burger.classList.remove('active')
+    navLinks.forEach(item => item.removeEventListener('click', classToggle));
   });
 };
 

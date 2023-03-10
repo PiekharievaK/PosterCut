@@ -1,0 +1,35 @@
+.footer{
+    width: 100vw;
+    padding: 0px 0px 0px;
+    background-color:aquamarine;
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+}
+.footer_content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px;
+
+}
+
+.footer_copiright{
+    padding: 10px 0px;
+    text-align: center;
+    border-top: 1px solid grey;
+}
+
+.footer_contacts{
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.footer_links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}

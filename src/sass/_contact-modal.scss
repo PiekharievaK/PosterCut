@@ -3,7 +3,7 @@ position: fixed;
 width: 100vw;
 height: 100vh;
 background-color: rgba(56, 56, 56, 0.404);
-z-index: 2;
+z-index: 5;
 }
 
 .contact-modal{
@@ -31,4 +31,8 @@ z-index: 2;
     position: absolute;
     top: 5px;
     right: 5px;
+}
+
+.contact-form_button{
+
 }

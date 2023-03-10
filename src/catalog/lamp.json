@@ -1,4 +1,4 @@
 [
-  { "name": "Облачка", "price": "1100", "height": 120, "width": 84 },
-  { "name": "Ваш дизайн", "price": "1000 - 1500", "height": "-", "width": "-" }
+  { "name": "Облачка", "price": "1100", "height": 120, "width": 84 , "image":"https://i.ibb.co/yQpc3zP/mishka.jpg"},
+  { "name": "Ваш дизайн", "price": "1000 - 1500", "height": "-", "width": "-" , "image":"https://i.ibb.co/4SGZNzp/8073-07-6.jpg"}
 ]
