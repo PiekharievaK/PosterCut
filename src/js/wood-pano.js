@@ -16,9 +16,9 @@ const woodList = data => {
   <ul class=" my-slider">${data
     .map(
       item => `<li class="wood-card">
-      <div class="wood-card_content">   
+      <div class="wood-card_content">  
       <div class="wood-card_image-box">
-    <img class="wood-card_image" src=${item.image?.trim()!==""? item.image: "https://diadoc.com/wp-content/themes/govorov.top/assets/img/no-photo.svg"} alt=${item.name} border="0" />
+    <img class="wood-card_image" src=${item.image?.trim()!==""? item.image: "https://i.ibb.co/hXCwYmK/4054617.png"} alt=${item.name} border="0" />
         </div>    
         <div class="wood-card_thumb" >
         <span class="wood-card_title wood-card_description">${item.name}</span>

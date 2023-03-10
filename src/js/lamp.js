@@ -8,7 +8,7 @@ const lampsList = data => {
         item => `<li class="lamp-card">
         <div class="lamp-card_content">   
         <div class="lamp-card_image-box">
-      <img class="lamp-card_image" src=${item.image?.trim()!==""? item.image: "https://diadoc.com/wp-content/themes/govorov.top/assets/img/no-photo.svg"} alt=${item.name} border="0" />
+      <img class="lamp-card_image" src=${item.image?.trim()!==""? item.image: "https://i.ibb.co/hXCwYmK/4054617.png"} alt=${item.name} border="0" />
           </div>    
           <div class="lamp-card_thumb" >
           <span class="lamp-card_title lamp-card_description">${item.name}</span>
