@@ -4,8 +4,9 @@
   "description": "",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build"
+    "build": "parcel build src/*.html "
       },
+
   "keywords": [],
   "author": "Piekharieva Kateryna <pechareva@gmail.com>",
   "license": "ISC",
