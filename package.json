@@ -5,11 +5,11 @@
   "homepage": "https://PiekharievaK.github.io/PosterCut",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
-  },
+    "build": "parcel build src/*.html --public-url /PosterCut/"
+      },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PiekharievaK/PosterCut.git/"
+    "url": "git+https://github.com/PiekharievaK/PosterCut.git"
   },
   "keywords": [],
   "author": "Piekharieva Kateryna <pechareva@gmail.com>",
