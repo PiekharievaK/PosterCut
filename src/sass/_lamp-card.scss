@@ -13,7 +13,7 @@
 .lamp-catalog_list {
     display: flex;
     overflow: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
     justify-content: space-around;
   }
 
