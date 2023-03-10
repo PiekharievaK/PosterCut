@@ -1,12 +1,11 @@
 {
   "name": "poster-cut",
-  "version": "2.5.0",
+  "version": "2.0.0",
   "description": "",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html "
       },
-
   "keywords": [],
   "author": "Piekharieva Kateryna <pechareva@gmail.com>",
   "license": "ISC",
