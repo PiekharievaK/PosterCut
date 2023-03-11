@@ -1,0 +1,18 @@
+
+.delivery {
+}
+
+.delivery_content {
+}
+.delivery_subtitle {
+    font-weight: 600;
+    margin-bottom: 20px
+    
+}
+.delivery_list {
+    list-style:circle
+}
+.delivery_item {
+    &:not(:last-child){
+    margin-bottom: 10px;}
+}
