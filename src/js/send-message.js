@@ -3,9 +3,9 @@ import Toastify from 'toastify-js';
 import dotenv from "dotenv"
 
 dotenv.config()
+const CHAT_ID = process.env.CHAT_ID;
+const URI = process.env.URI;
 
-const {TOKEN, CHAT_ID , URI }= process.env;
-console.log(TOKEN, CHAT_ID , URI)
 const toggleContactModal = e => {
   document.getElementById('contact-modal').classList.toggle('visually-hidden');
   document.body.classList.toggle('modal-open');
