@@ -19,7 +19,7 @@ const sendMessage = async e => {
   <b>Почта: </b> ${email.value}\n
   <b>Телефон: </b>${phone.value}\n
   ${message.value.trim() !== '' ? `<b>Сообщение: </b>${message.value}\n` : ''}`;
-  console.log(message);
+  // console.log(message);
   const button = document.getElementById('contact-form-submit');
   try {
     button.disabled = true;
