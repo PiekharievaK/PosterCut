@@ -1,15 +1,16 @@
 import axios from 'axios';
 import Toastify from 'toastify-js';
+import dotenv from "dotenv"
 
-const TOKEN = `6055741776:AAHaoQhhVBryoSOJWrMTRFnkK2qR3pIZdSc`;
-const CHAT_ID = '-1001605449551';
-const URI = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+dotenv.config()
 
+const {TOKEN, CHAT_ID , URI }= process.env;
+console.log(TOKEN, CHAT_ID , URI)
 const toggleContactModal = e => {
   document.getElementById('contact-modal').classList.toggle('visually-hidden');
   document.body.classList.toggle('modal-open');
 };
-
+ 
 const sendMessage = async e => {
   e.preventDefault();
   const { name, email, phone, message } = e.target;

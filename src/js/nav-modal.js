@@ -1,7 +1,6 @@
 const nav = document.getElementById('header-nav');
 const button = document.getElementById('header-button');
 const burger = document.getElementsByClassName("header_burger")[0]
-console.log(nav);
 
 const classToggle = () => {
   nav.classList.toggle('modal-open');
