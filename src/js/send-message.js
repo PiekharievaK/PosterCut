@@ -37,7 +37,7 @@ const sendMessage = async e => {
     }).showToast();
   } catch (e) {
     button.disabled = false;
-    console.log(e.message);
+    // console.log(e.message);
   }
 };
 document
