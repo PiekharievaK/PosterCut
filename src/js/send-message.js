@@ -7,7 +7,7 @@ const CHAT_ID = process.env.CHAT_ID;
 const URI = process.env.URI;
 
 const toggleContactModal = e => {
-  document.getElementById('contact-modal').classList.toggle('visually-hidden');
+  document.getElementById('contact-modal').classList.toggle('is-hidden');
   document.body.classList.toggle('modal-open');
 };
  
