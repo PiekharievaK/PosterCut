@@ -12,7 +12,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     // justify-content: center;
   }
@@ -126,7 +126,7 @@
   @media screen and (min-width: 768px) {
     display: block;
     width: 150px;
-    height: 30px;
+    // height: 30px; 
     margin: auto;
   }
 }
@@ -158,10 +158,10 @@
   margin: 0px;
   @media screen and (min-width: 768px) {
     display: block;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    // position: absolute;
+    // top: 10px;
+    // left: 50%;
+    // transform: translate(-50%, 0%);
     width: 150px;
   }
   @media screen and (min-width: 1281px) {

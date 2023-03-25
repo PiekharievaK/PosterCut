@@ -20,25 +20,25 @@ width: fit-content;
 }
 
 .wood-card_image-box {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   @media screen and (min-width: 768px) {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 }
 .control {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: calc(100% + 80px);
+  width: calc(100%);
   top: 50%;
   left: 0px;
-  transform: translate(-40px, -50%);
+  transform: translate(0px, -50%);
 }
 .prev,
 .next {
@@ -58,6 +58,7 @@ width: fit-content;
 
 .wood-catalog {
   position: relative;
+  padding: 0px 40px;
 }
 
 .wood-card_title{

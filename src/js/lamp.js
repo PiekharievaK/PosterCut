@@ -6,7 +6,7 @@ const lampsList = data => {
     <ul class=" lamp-catalog_list">${data
       .map(
         item => `<li class="lamp-card">
-        <div class="lamp-card_content">   
+   
         <div class="lamp-card_image-box">
       <img class="lamp-card_image" src=${item.image?.trim()!==""? item.image: "https://i.ibb.co/hXCwYmK/4054617.png"} alt=${item.name} border="0" />
           </div>    
@@ -16,7 +16,7 @@ const lampsList = data => {
           ${item.width !== "-"|| item.height !== "-" ? `<span class="lamp-card_size lamp-card_description">(${item.width} х ${item.height})мм </span>`: ""}
           ${item.pieces > 1?`<span class="lamp-card_pices lamp-card_description">Части: ${item.pieces}</span>` : "" }
        </div>
-       </div>
+       
        </li>`
       )
       .join('')}</ul></div>`;
