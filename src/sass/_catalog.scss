@@ -29,7 +29,10 @@
     transform: rotate(-180deg);
     text-align: center;
     & span{
-      display: inline-block
+      display: inline-block;
+     @media screen and (min-width: 768px) {
+      display: inline;
+      }
     }
   }
   .catalog_image {
