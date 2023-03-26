@@ -46,6 +46,7 @@
 }
 
 .links-item {
+    width: fit-content;
   @media screen and (min-width: 1024px) {
     &:not(:last-child) {
       margin-right: 20px;
