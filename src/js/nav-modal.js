@@ -29,4 +29,5 @@ const headerToggle = () => {
   });
 };
 
+console.log(button);
 button.addEventListener('click', headerToggle);

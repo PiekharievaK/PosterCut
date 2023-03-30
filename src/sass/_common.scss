@@ -33,6 +33,10 @@ body {
  button {
     cursor: pointer;
   }
+
+  main{
+    flex-grow: 1;
+  }
   
 .is-hidden {
     opacity: 0;
@@ -53,10 +57,12 @@ body {
   .modal-open{
     overflow: hidden;
   }
+  
   .section {
     width: 100%;
     padding: 50px 0px;
   }
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -75,6 +81,7 @@ body {
     }
   }
 
+
   .button{
     border-radius: 5px;
     background-color: rgb(0, 0, 0);
@@ -84,10 +91,14 @@ body {
     &:hover,
     &:focus{
       color: black;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(148, 148, 148);
     }
   }
   .section_title{
    text-align: center; 
    margin-bottom: 30px;
+  }
+
+  .non-breaking-name{
+    display: inline-block;
   }
