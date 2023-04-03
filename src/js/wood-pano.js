@@ -1,16 +1,18 @@
 import woodPano from '../catalog/wood.json';
 import { tns } from 'tiny-slider';
-
+import symbols from "../images/symbol-defs.svg"
 
 
 const woodCatalog = document.querySelector('#Wood-list');
 
-
+ 
 const woodList = data => {
   const list = `<div class="wood-catalog">
   <ul class="control" id="custom-control">
-  <li class="prev"><i class=""><</i></li>
-  <li class="next"><i class="">></i></li>
+  <li class="prev" > <svg width="30px" height="30px">
+  <use href="${symbols}#icon-arrow-left" /></svg> </li>
+  <li class="next" id="next"><svg width="30px" height="30px">
+  <use href="${symbols}#icon-arrow-right" /></svg></li>
         
   </ul>  
   <ul class=" my-slider">${data
@@ -44,8 +46,9 @@ var slider = tns({
   // autoplay: true
   gutter: 20,
   // edgePadding: 20,
+  nav: false,
+  // navPosition: "bottom",
 controlsPosition: "bottom",
-navPosition: "bottom",
 mouseDrag: true,
 controlsContainer: "#custom-control",
 responsive:{
