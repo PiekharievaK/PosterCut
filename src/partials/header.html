@@ -1,4 +1,5 @@
-<header class="header container" id="Header">
+<header class="header" id="Header">
+  <div class="container">
   <div class="header_content">
     <div class="header_mobile-control" id="header-mobile-control">
       <a href="/">
@@ -7,13 +8,22 @@
           src="./images/logo.png"
           alt="Poster Cut Logo"
       /></a>
-      <button class="header_burger" id="header-button"><span></span></button>
+      <button class="header_burger" id="burger-button"><span></span></button>
     </div>
     <div class="nav" id="header-nav">
       <nav class="nav_content">
         <ul class="nav_list--catalog">
           <li class="nav_item">
             <a class="nav_link" href="/#Catalog">Каталог</a>
+            <button id="nav_menu-button" class="nav_menu-button"><svg width="30px" height="30px" class="nav_menu-button--icon">
+              <use href="./images/symbol-defs.svg#icon-arrow-right" /></svg></button>
+            <div class="catalog-menu" id="catalog-menu">
+              <ul class="catalog-menu_list">
+                <li class="catalog-menu_item"> <a class="catalog-menu_link" href="/src/wood.html">Изделия из дерева</a></li>
+              <li class="catalog-menu_item"> <a class="catalog-menu_link" href="/src/acrylic.html">Изделия из акрила</a></li>
+            </ul>
+            </div>
+
           </li>
           <li class="nav_item">
             <a class="nav_link" href="./delivery.html">Доставка</a>
@@ -38,4 +48,5 @@
       </nav>
     </div>
   </div>
+</div>
 </header>
