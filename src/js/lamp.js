@@ -1,20 +1,44 @@
 import lamps from '../catalog/lamp.json';
+import simpleLightbox from 'simplelightbox';
 
 const lampsCatalog = document.querySelector('#Lamps-list');
+
 const lampsList = data => {
   const list = `<div class="lamp-catalog">
-    <ul class=" lamp-catalog_list">${data
+    <ul class=" lamp-catalog_list galleryLamp">${data
       .map(
         item => `<li class="lamp-card">
-        <div class="lamp-card_content">   
+        <div href=${
+          item.image?.trim() !== ''
+            ? item.image
+            : 'https://i.ibb.co/hXCwYmK/4054617.png'
+        } class="lamp-card_content" >   
         <div class="lamp-card_image-box">
-      <img class="lamp-card_image" src=${item.image?.trim()!==""? item.image: "https://i.ibb.co/hXCwYmK/4054617.png"} alt=${item.name} border="0" />
+      <img class="lamp-card_image" src=${
+        item.image?.trim() !== ''
+          ? item.image
+          : 'https://i.ibb.co/hXCwYmK/4054617.png'
+      } alt=${item.name} border="0"  data-description="${item.name}<br> ${
+          item.price
+        } грн <br> (${item.width} х ${item.height}) мм"/>
           </div>    
           <div class="lamp-card_thumb" >
-          <span class="lamp-card_title lamp-card_description">${item.name}</span>
-          <span class="lamp-card_price lamp-card_description">${item.price} руб</span>
-          ${item.width !== "-"|| item.height !== "-" ? `<span class="lamp-card_size lamp-card_description">(${item.width} х ${item.height})мм </span>`: ""}
-          ${item.pieces > 1?`<span class="lamp-card_pices lamp-card_description">Части: ${item.pieces}</span>` : "" }
+          <span class="lamp-card_title lamp-card_description">${
+            item.name
+          }</span>
+          <span class="lamp-card_price lamp-card_description">${
+            item.price
+          } грн</span>
+          ${
+            item.width !== '-' || item.height !== '-'
+              ? `<span class="lamp-card_size lamp-card_description">(${item.width} х ${item.height})мм </span>`
+              : ''
+          }
+          ${
+            item.pieces > 1
+              ? `<span class="lamp-card_pices lamp-card_description">Части: ${item.pieces}</span>`
+              : ''
+          }
        </div>
        </div>
        </li>`
@@ -22,21 +46,28 @@ const lampsList = data => {
       .join('')}</ul></div>`;
   return list;
 };
+
 lampsCatalog.innerHTML = lampsList(lamps);
+
+let lampLightbox = new simpleLightbox('.lamp-card_content', {
+  captionsData: 'data-description',
+  captionDelay: 250,
+});
+
 // const woodList = data => {
 //   const list = `<div class="wood-catalog">
 //   <ul class="control" id="custom-control">
 //   <li class="prev"><i class=""><</i></li>
 //   <li class="next"><i class="">></i></li>
-        
-//   </ul>  
+
+//   </ul>
 //   <ul class=" my-slider">${data
 //     .map(
 //       item => `<li class="wood-card">
-//       <div class="wood-card_content">   
+//       <div class="wood-card_content">
 //       <div class="wood-card_image-box">
 //     <img class="wood-card_image" src=${item.image?.trim()!==""? item.image: "https://diadoc.com/wp-content/themes/govorov.top/assets/img/no-photo.svg"} alt=${item.name} border="0" />
-//         </div>    
+//         </div>
 //         <div class="wood-card_thumb" >
 //         <span class="wood-card_title wood-card_description">${item.name}</span>
 //         <span class="wood-card_price wood-card_description">${item.price} руб</span>
@@ -46,12 +77,7 @@ lampsCatalog.innerHTML = lampsList(lamps);
 //      </div>
 //      </li>`
 //     )
-    // .join('')}</ul></div>`;
-
-
-
-
-
+// .join('')}</ul></div>`;
 
 // ._2 {
 //   position: absolute;
