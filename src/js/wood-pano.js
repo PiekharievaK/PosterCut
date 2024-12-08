@@ -49,7 +49,7 @@ const woodList = data => {
         }
         ${
           item.pieces > 1
-            ? `<span class="wood-card_pices wood-card_description">Части: ${item.pieces}</span>`
+            ? `<span class="wood-card_pices wood-card_description">Частини: ${item.pieces}</span>`
             : ''
         }
      </div>

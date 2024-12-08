@@ -14,11 +14,11 @@ const toggleContactModal = e => {
 const sendMessage = async e => {
   e.preventDefault();
   const { name, email, phone, message } = e.target;
-  let htmlMessage = `<b>Заявка с сайта</b>\n
-  <b>Отправитель: </b>${name.value}\n
+  let htmlMessage = `<b>Заявка з сайту</b>\n
+  <b>Відправник: </b>${name.value}\n
   <b>Почта: </b> ${email.value}\n
   <b>Телефон: </b>${phone.value}\n
-  ${message.value.trim() !== '' ? `<b>Сообщение: </b>${message.value}\n` : ''}`;
+  ${message.value.trim() !== '' ? `<b>Повідомлення: </b>${message.value}\n` : ''}`;
   // console.log(message);
   const button = document.getElementById('contact-form-submit');
   try {
@@ -33,7 +33,7 @@ const sendMessage = async e => {
     toggleContactModal();
 
     Toastify({
-      text: 'Ваша заявка отправлена! Мы свяжемся с вами в ближайшее время',
+      text: "Вашу заявку відправлено! Ми зв'яжемося з вами найближчим часом",
     }).showToast();
   } catch (e) {
     button.disabled = false;

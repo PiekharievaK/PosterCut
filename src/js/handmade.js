@@ -1,9 +1,9 @@
-import lamps from '../catalog/lamp.json';
+import items from '../catalog/handmade.json';
 import simpleLightbox from 'simplelightbox';
 
-const lampsCatalog = document.querySelector('#Lamps-list');
+const handmadeCatalog = document.querySelector('#Handmade-list');
 
-const lampsList = data => {
+const itemsList = data => {
   const list = `<div class="lamp-catalog">
     <ul class=" lamp-catalog_list galleryLamp">${data
       .map(
@@ -12,7 +12,7 @@ const lampsList = data => {
           item.image?.trim() !== ''
             ? item.image
             : 'https://i.ibb.co/hXCwYmK/4054617.png'
-        } class="lamp-card_content" >   
+        } class="handmade-card_content" >   
         <div class="lamp-card_image-box">
       <img class="lamp-card_image" src=${
         item.image?.trim() !== ''
@@ -47,9 +47,9 @@ const lampsList = data => {
   return list;
 };
 
-lampsCatalog.innerHTML = lampsList(lamps);
+handmadeCatalog.innerHTML = itemsList(items);
 
-let lampLightbox = new simpleLightbox('.lamp-card_content', {
+let handmadeLightbox = new simpleLightbox('.handmade-card_content', {
   captionsData: 'data-description',
   captionDelay: 250,
 });

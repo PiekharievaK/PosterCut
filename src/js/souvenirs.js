@@ -1,10 +1,10 @@
-import lamps from '../catalog/lamp.json';
+import items from '../catalog/souvenirs.json';
 import simpleLightbox from 'simplelightbox';
 
-const lampsCatalog = document.querySelector('#Lamps-list');
+const souvenirsCatalog = document.querySelector('#Souvenirs-list');
 
-const lampsList = data => {
-  const list = `<div class="lamp-catalog">
+const itemsList = data => {
+  const list = `<div class="souvenirs-catalog">
     <ul class=" lamp-catalog_list galleryLamp">${data
       .map(
         item => `<li class="lamp-card">
@@ -12,7 +12,7 @@ const lampsList = data => {
           item.image?.trim() !== ''
             ? item.image
             : 'https://i.ibb.co/hXCwYmK/4054617.png'
-        } class="lamp-card_content" >   
+        } class="souvenirs-card_content" >   
         <div class="lamp-card_image-box">
       <img class="lamp-card_image" src=${
         item.image?.trim() !== ''
@@ -47,9 +47,9 @@ const lampsList = data => {
   return list;
 };
 
-lampsCatalog.innerHTML = lampsList(lamps);
+souvenirsCatalog.innerHTML = itemsList(items);
 
-let lampLightbox = new simpleLightbox('.lamp-card_content', {
+let souvenirsLightbox = new simpleLightbox('.souvenirs-card_content', {
   captionsData: 'data-description',
   captionDelay: 250,
 });

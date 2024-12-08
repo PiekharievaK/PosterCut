@@ -1,16 +1,14 @@
 [
-    { "name": "Кролик", "price": "1000", "height": 650, "width": 550, "pieces": 1, "image": "https://i.ibb.co/VMT3064/photo-2023-02-25-16-35-10.jpg" },
-    { "name": "Медведь", "price": "2000", "height": 600, "width": 1000, "pieces": 1 , "image": "https://i.ibb.co/fMBrh47/photo-2023-02-25-16-35-14.jpg"},
-    { "name": "Колибри", "price": "1000", "height": 620, "width": 480, "pieces": 1 , "image": "https://i.ibb.co/QQVLNFp/photo-2023-02-25-16-35-12-2.jpg"},
-    { "name": "Волк", "price": "1000", "height": 660, "width": 480, "pieces": 1 , "image": "https://i.ibb.co/rwxFRBf/photo-2023-02-25-16-35-11.jpg"},
+    { "name": "Ведмідь", "price": "2000", "height": 600, "width": 1000, "pieces": 1 , "image": "https://i.ibb.co/fMBrh47/photo-2023-02-25-16-35-14.jpg"},
+    { "name": "Колібрі", "price": "1000", "height": 620, "width": 480, "pieces": 1 , "image": "https://i.ibb.co/QQVLNFp/photo-2023-02-25-16-35-12-2.jpg"},
+    { "name": "Вовк", "price": "1000", "height": 660, "width": 480, "pieces": 1 , "image": "https://i.ibb.co/rwxFRBf/photo-2023-02-25-16-35-11.jpg"},
     { "name": "Лев", "price": "1000", "height": 640, "width": 480, "pieces": 1 , "image": "https://i.ibb.co/pnvTkfF/photo-2023-02-25-16-35-13.jpg"},
     { "name": "Тигр", "price": "1000", "height": 630, "width": 482, "pieces": 1 , "image": ""},
     { "name": "Каскад", "price": "2000", "height": "-", "width": "-", "pieces": 1 , "image": ""},
-    { "name": "Прикосновения", "price": "6000", "height": 50, "width": 50, "pieces": 3 , "image": "https://i.ibb.co/F8Y1Rvh/331164719-939963774106478-359885668328986471-n.jpg"},
-    { "name": "Совушка", "price": "1000", "height": 630, "width": 510, "pieces": 1 , "image": "https://i.ibb.co/yNCZrPk/photo-2023-02-25-16-35-12.jpg"},
-    { "name": "Сова", "price": "1000", "height": 600, "width": 480, "pieces": 1 , "image": ""},
+    { "name": "Руки", "price": "6000", "height": 50, "width": 50, "pieces": 3 , "image": "https://i.ibb.co/F8Y1Rvh/331164719-939963774106478-359885668328986471-n.jpg"},
+    { "name": "Сова", "price": "1000", "height": 630, "width": 510, "pieces": 1 , "image": "https://i.ibb.co/yNCZrPk/photo-2023-02-25-16-35-12.jpg"},
     { "name": "Олень", "price": "1000", "height": 620, "width": 480, "pieces": 1 , "image": "https://i.ibb.co/cT3d1gQ/photo-2023-02-25-16-35-11-2.jpg"},
-    { "name": "Олень лес", "price": "1200", "height": 640, "width": 480, "pieces": 1 , "image": "https://i.ibb.co/VJdC8HB/photo-2023-02-25-16-35-10-2.jpg"},
-    { "name": "Кубик рубика", "price": "1200", "height": 670, "width": 485, "pieces": 1 , "image": "https://i.ibb.co/x1YLSD6/photo-2023-02-25-16-35-14-2.jpg"},
-    { "name": "Кошка", "price": "1000", "height": 650, "width": 450, "pieces": 1 , "image": "https://i.ibb.co/LNtv8kt/photo-2023-02-25-16-35-13-2.jpg"}
+    { "name": "Олень і ліс", "price": "1200", "height": 640, "width": 480, "pieces": 1 , "image": "https://i.ibb.co/VJdC8HB/photo-2023-02-25-16-35-10-2.jpg"},
+    { "name": "Кубік Рубіка", "price": "1200", "height": 670, "width": 485, "pieces": 1 , "image": "https://i.ibb.co/x1YLSD6/photo-2023-02-25-16-35-14-2.jpg"},
+    { "name": "Кішка", "price": "1000", "height": 650, "width": 450, "pieces": 1 , "image": "https://i.ibb.co/LNtv8kt/photo-2023-02-25-16-35-13-2.jpg"}
   ] 

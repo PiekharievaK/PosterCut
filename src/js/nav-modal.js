@@ -5,34 +5,34 @@ const catalogMenu = document.getElementById('catalog-menu');
 const mobileControl = document.getElementById('header-mobile-control');
 const navLinks = document.querySelectorAll('.nav_item');
 
-const menuToggle = (e) =>{
+const menuToggle = e => {
   // console.log(catalogMenu);
-   if (!e.currentTarget.parentNode.classList.contains('active')){
-    
+  if (!e.currentTarget.parentNode.classList.contains('active')) {
     e.currentTarget.parentNode.classList.add('active');
     // e.target.addEventListener('mouseout', menuToggle)
-  }  else {
-  e.currentTarget.parentNode.classList.remove('active');
-  // e.target.removeEventListener('mouseout', menuToggle);
-} 
-} 
+  } else {
+    e.currentTarget.parentNode.classList.remove('active');
+    // e.target.removeEventListener('mouseout', menuToggle);
+  }
+};
 
 const classToggle = e => {
   console.log(e.target);
-  console.log(e.currentTarget)
+  console.log(e.currentTarget);
   console.log(menuButton.children[0]);
-  if (e.target === menuButton || e.target === menuButton.children[0]  ) {
-    // menuToggle(e); 
-    return; 
-  } 
-  if (e.target.parentNode.classList.contains('active')){
-  navLinks.forEach(item => {
-    if (item.classList.contains('active')) { 
-      item.classList.remove('active'); 
-    } else {
-      return;
-    }
-  })}
+  if (e.target === menuButton || e.target === menuButton.children[0]) {
+    // menuToggle(e);
+    return;
+  }
+  if (e.target.parentNode.classList.contains('active')) {
+    navLinks.forEach(item => {
+      if (item.classList.contains('active')) {
+        item.classList.remove('active');
+      } else {
+        return;
+      }
+    });
+  }
 
   console.log(e.target);
   nav.classList.toggle('modal-open');
@@ -41,8 +41,6 @@ const classToggle = e => {
 
   // e.target.parentNode.classList.remove("active")
 };
-
-
 
 const headerToggle = e => {
   classToggle(e);
@@ -63,9 +61,9 @@ const headerToggle = e => {
 
 // const toggleCatalog = (e) => {
 //   menuToggle(e)
-// }; 
+// };
 
 burger.addEventListener('click', headerToggle);
 menuButton.addEventListener('click', menuToggle);
 // menuButton.parentElement.addEventListener('mouseover', menuToggle)
-// menuButton.parentElement.addEventListener('mouseout', menuToggle)            
+// menuButton.parentElement.addEventListener('mouseout', menuToggle)

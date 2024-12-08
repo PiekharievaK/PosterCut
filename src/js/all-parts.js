@@ -1,5 +1,7 @@
 import "./nav-modal"
 import "./wood-pano"
 import "./lamp"
+import "./souvenirs"
+import "./handmade"
 import "./send-message"
 import"./to-top-button"
