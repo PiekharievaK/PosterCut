@@ -13,6 +13,7 @@
     "url": "https://github.com/PiekharievaK/PosterCut/issues"
   },
   "dependencies": {
+    "@parcel/core": "^2.0.0",
     "@parcel/rust": "^2.13.2",
     "axios": "^1.3.4",
     "dotenv": "^16.0.3",
