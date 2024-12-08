@@ -19,6 +19,7 @@
     "dotenv": "^16.0.3",
     "modern-normalize": "^1.1.0",
     "simplelightbox": "^2.14.2",
+    "svgo": "^3.3.2",
     "tiny-slider": "^2.9.4",
     "toastify": "^2.0.1",
     "toastify-js": "^1.12.0"
